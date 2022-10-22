@@ -1,8 +1,8 @@
 var username_to_change = "" // empty is for create and with data for update 
 // console.log(data);
 
-let url = "https://nodeappk.herokuapp.com";
-// let url = "http://localhost:3000";
+// let url = "https://nodeappk.herokuapp.com";
+let url = "http://localhost:2121";
 
 $(document).ready(function () {
     getData();
@@ -183,7 +183,7 @@ function alert(status, message) {
 
 function resetForm() {
     $("#myform")[0].reset();
-    $("btnSubmit").val("insert");
+    $(".btnSubmit").val("insert");
     $("#username").prop("disabled", false);
     $("#password").prop("disabled", false);
 }

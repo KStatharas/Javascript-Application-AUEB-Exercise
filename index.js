@@ -69,7 +69,7 @@ app.get("/user/create", (req, res) => {
 });
 
 app.delete("/user/delete", (req, res) => {
-    console.log("Deleting user", res.query.username);
+    console.log("Deleting user", req.query.username);
 
     const username = req.query.username;
     console.log("Delete user " + username);
