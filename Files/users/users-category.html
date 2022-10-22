@@ -9,12 +9,26 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Χρήστες - Σύστημα Ανακοινώσεων</title>
+    <title>Χρήστες - Κατηγορίες Χρηστών</title>
 </head>
+
+<style>
+    dt {
+  float: left;
+  clear: left;
+  margin-right: 10px;
+  margin-left: 10%;
+    }
+
+    dd {
+    margin-left: 35%;
+    
+    }
+</style>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #333;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(52, 21, 21);">
         <div class="container-fluid">
-            <a class="navbar-brand" href="https://aueb.gr/" target="_blank"><img src="../../img/hermis_logo.jpg" alt="Οικονομικό Πανεπιστήμιο Αθηνών" width="48" height="auto"></a>
+            <a class="navbar-brand" href="https://aueb.gr/" target="_blank"><img src="https://i.postimg.cc/y8PwLGwP/hermis-logo.jpg" alt="Οικονομικό Πανεπιστήμιο Αθηνών" width="48" height="auto"></a>
             <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button> -->
@@ -28,10 +42,11 @@
                             Χρήστες
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../users/users.html">Χρήστες</a></li>
-                            <li><a class="dropdown-item" href="../users/roles.html">Ρόλοι</a></li>
+                            <li><a class="dropdown-item" href="users.html">Χρήστες</li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="../users/users-category.html">Κατηγορίες Χρηστών</a></li>
+                            <li><a class="dropdown-item" href="roles.html">Ρόλοι</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="users-category.html">Κατηγορίες Χρηστών</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -40,6 +55,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="../departments/departments.html">Διευθύνσεις</a></li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="../departments/subdepartments.html">Τμήματα</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="../departments/categories.html">Κατηγορίες</a></li>
@@ -51,6 +67,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="../announcements/announcements.html">Δημιουργία Ανακοινώσεων</a></li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="../announcements/subscription.html">Εγγραφή σε λίστα</a></li>
                         </ul>
                     </li>
@@ -59,6 +76,7 @@
             </div>
         </div>
     </nav>
+
 
     <div class="container border bg-light py-3 my-3">
         <h2>Κατηγορίες Χρηστών</h2>
@@ -102,22 +120,37 @@
 
     <br>
     <h3 class="text-center">Description list</h3>
-    <div class="row row-cols-2 justify-content-center w">
-        <dl class="row">
-            <dt class="col-sm-3 text-right"><strong>Αναγνωριστικό:</strong> 1</dt>
-            <dd class="col-sm-9 text-left"><strong>Όνομα:</strong> Προπτυχιακός</dd>
+    <div class="row row-cols-3 justify-content-center w mb-5">
+        <dl class="list-group">
+            <li class="list-group-item">
+                <dt><strong>Αναγνωριστικό:</strong> 1,</dt>
+                <dd><strong>Όνομα:</strong> Προπτυχιακός</dd>
+            </li>
             
-            <dt class="col-sm-3 text-right"><strong>Αναγνωριστικό:</strong> 2</dt>
-            <dd class="col-sm-9 text-left"><strong>Όνομα:</strong> Μεταπτυχιακός</dd>
+            <li class="list-group-item">
+                <dt><strong>Αναγνωριστικό:</strong> 2,</dt>
+                <dd><strong>Όνομα:</strong> Μεταπτυχιακός</dd>
+            </li>
 
-            <dt class="col-sm-3 text-right"><strong>Αναγνωριστικό:</strong> 3</dt>
-            <dd class="col-sm-9 text-left"><strong>Όνομα:</strong> ΔΕΠ</dd>
+            <li class="list-group-item">
+                <dt><strong>Αναγνωριστικό:</strong> 3,</dt>
+                <dd"><strong>Όνομα:</strong> ΔΕΠ</dd>
+            </li>
             
-            <dt class="col-sm-3 text-right"><strong>Αναγνωριστικό:</strong> 4</dt>
-            <dd class="col-sm-9 text-left"><strong>Όνομα:</strong> ΕΔΙΠ</dd>
+            <li class="list-group-item">
+                <dt><strong>Αναγνωριστικό:</strong> 4,</dt>
+                <dd><strong>Όνομα:</strong> ΕΔΙΠ</dd>
+            </li>
         </dl>
     </div>
 
-    <p><a href="../index.html">Επιστροφή</a></p>
+    <div class="row row-cols-5 justify-content-center">
+        <a class="btn btn-primary" href="../index.html">Επιστροφή</a>
+    </div>
+
 </body>
+<footer>
+    <hr>
+    <p>© Copyright 1996 - 2022 | Athens University of Economics and Business</p>
+</footer>
 </html>
